@@ -29,6 +29,6 @@ def log(a, b):
         return ValueError
 
 def exp(a, b):
-    return pow(a,b)
+    return a**b
 
 
