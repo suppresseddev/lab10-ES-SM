@@ -34,9 +34,8 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(div(6.6,6),1.1)
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
-        self.assertEqual(div(5,0), 0)
-        self.assertEqual(div(7,0), 0)
-        self.assertEqual(div(-10,0), 0)
+        with self.assertRaises(ZeroDivisionError):
+            div(10,0)
 
 
     def test_logarithm(self): # 3 assertions
@@ -45,9 +44,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(logarithm(10,10),1)
 
     def test_log_invalid_base(self): # 1 assertion
-        self.assertEqual(logarithm(4,0),0)
-        self.assertEqual(logarithm(8,0),0)
-        self.assertEqual(logarithm(10,0),0)
+        with self.assertEqual(ValueError):
+            logarithm(5,0)
     # ##########################
     
     ######## Partner 1
