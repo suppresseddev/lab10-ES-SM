@@ -1,3 +1,7 @@
+# https://github.com/suppresseddev/lab10-ES-SM
+# Partner 1: Eli Simon
+#Partner 2: Santiago Mena
+
 import unittest
 from calculator import *
 
